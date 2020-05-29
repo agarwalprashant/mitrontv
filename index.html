@@ -55,7 +55,7 @@
 
     <header class="header">
       <div class="bg-video">
-        <video class="bg-video__content" autoplay controls>
+        <video class="bg-video__content" autoplay="true" id="vid">
           <source src="img/riya-jain.mp4" type="video/mp4" />
           <source src="img/video.webm" type="video/webm" />
           Your browser is not supported!
@@ -528,5 +528,10 @@
             </div>
         </section>
         -->
+
+    <script>
+      console.log('autoplaying video');
+      document.getElementById('vid').play();
+    </script>
   </body>
 </html>
