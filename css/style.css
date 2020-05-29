@@ -771,11 +771,10 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
+    position: absolute; }
   .header__logo {
-    height: 7.5rem; }
+    height: 12.5rem;
+    width: 12.5rem; }
   .header__text-box {
     position: absolute;
     top: 40%;

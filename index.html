@@ -31,19 +31,23 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">About Mitron</a>
+            <a href="#popup1" class="navigation__link">About Mitron</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Privacy Policy</a>
+            <a
+              href="https://mitronlegal.s3.ap-south-1.amazonaws.com/privacy.html"
+              class="navigation__link"
+              >Privacy Policy</a
+            >
           </li>
-          <li class="navigation__item">
+          <!-- <li class="navigation__item">
             <a href="#" class="navigation__link">Community Guidelines</a>
-          </li>
-          <li class="navigation__item">
+          </li> -->
+          <!-- <li class="navigation__item">
             <a href="#" class="navigation__link">Terms Of Service</a>
-          </li>
+          </li> -->
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Help Center</a>
+            <a href="#popup" class="navigation__link">Help Center</a>
           </li>
         </ul>
       </nav>
@@ -51,7 +55,7 @@
 
     <header class="header">
       <div class="bg-video">
-        <video class="bg-video__content" autoplay>
+        <video class="bg-video__content" autoplay controls>
           <source src="img/riya-jain.mp4" type="video/mp4" />
           <source src="img/video.webm" type="video/webm" />
           Your browser is not supported!
@@ -62,8 +66,8 @@
           src="img/mitron_logo.png"
           alt="Logo"
           class="header__logo"
-          max-height="2rem"
-          max-width="2rem"
+          height="100px"
+          width="100px"
         />
       </div>
 
@@ -87,7 +91,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="google">
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
@@ -118,7 +122,7 @@
               for people to share and create their own videos.
             </p>
 
-            <a href="#" class="btn-text">Learn more &rarr;</a>
+            <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
           </div>
           <div class="col-1-of-2">
             <div class="composition">
@@ -277,11 +281,16 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn-text">Read all stories &rarr;</a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.mitron.tv"
+            class="btn-text"
+            target="_blank"
+            >Read all stories &rarr;</a
+          >
         </div>
       </section>
 
-      <section class="section-book">
+      <!-- <section class="section-book">
         <div class="row">
           <div class="book">
             <div class="book__form">
@@ -292,19 +301,7 @@
                   </h2>
                 </div>
 
-                <!-- <div class="form__group">
-                 
-
-                  <input
-                    type="tel"
-                    class="form__input"
-                    id="phone"
-                    required
-                    name="phone"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                  />
-                  <label for="name" class="form__label">Phone Number</label>
-                </div> -->
+                
 
                 <div class="form__group">
                   <input
@@ -318,33 +315,7 @@
                   <label for="email" class="form__label">Phone Number</label>
                 </div>
 
-                <!-- <div class="form__group u-margin-bottom-medium">
-                  <div class="form__radio-group">
-                    <input
-                      type="radio"
-                      class="form__radio-input"
-                      id="small"
-                      name="size"
-                    />
-                    <label for="small" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Small tour group
-                    </label>
-                  </div>
-
-                  <div class="form__radio-group">
-                    <input
-                      type="radio"
-                      class="form__radio-input"
-                      id="large"
-                      name="size"
-                    />
-                    <label for="large" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Large tour group
-                    </label>
-                  </div>
-                </div> -->
+            
 
                 <div class="form__group">
                   <button class="btn btn--green">Send &rarr;</button>
@@ -353,7 +324,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">
@@ -367,9 +338,10 @@
             media="(max-width: 37.5em)"
           />
           <img
-            srcset="img/mitron_logo.png 1x, img/mitron_logo.png 2x"
+            srcset="img/mitron-app.jpg 1x, img/mitron-app.jpg 2x"
+            height="250px"
             alt="Full logo"
-            src="img/mitron_logo.png"
+            src="img/mitron-app.jpg"
           />
         </picture>
       </div>
@@ -378,19 +350,23 @@
           <div class="footer__navigation">
             <ul class="footer__list">
               <li class="footer__item">
-                <a href="#" class="footer__link">Company</a>
+                <a href="#popup1" class="footer__link">Company</a>
               </li>
               <!-- <li class="footer__item">
                 <a href="#" class="footer__link">Carrers</a>
               </li> -->
               <li class="footer__item">
-                <a href="#" class="footer__link">Privacy policy</a>
+                <a
+                  href="https://mitronlegal.s3.ap-south-1.amazonaws.com/privacy.html"
+                  class="footer__link"
+                  >Privacy policy</a
+                >
               </li>
-              <li class="footer__item">
+              <!-- <li class="footer__item">
                 <a href="#" class="footer__link">Terms</a>
-              </li>
+              </li> -->
               <li class="footer__item">
-                <a href="#" class="footer__link">Help Center</a>
+                <a href="#popup" class="footer__link">Help Center</a>
               </li>
             </ul>
           </div>
@@ -408,34 +384,77 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
-          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/mitron_app_2.png" alt="Tour photo" class="popup__img" />
+          <img
+            src="img/mitron_app_4.jpeg"
+            alt="Tour photo"
+            class="popup__img"
+          />
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>
           <h2 class="heading-secondary u-margin-bottom-small">
-            Start booking now
+            Email Us - info@mitron.tv
           </h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">
+          <!-- <h3 class="heading-tertiary u-margin-bottom-small">
             Important &ndash; Please read these terms before booking
-          </h3>
+          </h3> -->
           <p class="popup__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed
-            risus pretium quam. Aliquam sem et tortor consequat id. Volutpat
-            odio facilisis mauris sit amet massa vitae. Mi bibendum neque
-            egestas congue. Placerat orci nulla pellentesque dignissim enim sit.
-            Vitae semper quis lectus nulla at volutpat diam ut venenatis.
-            Malesuada pellentesque elit eget gravida cum sociis natoque
-            penatibus et. Proin fermentum leo vel orci porta non pulvinar neque
-            laoreet. Gravida neque convallis a cras semper. Molestie at
-            elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet
-            nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet
-            sit. Amet massa vitae tortor condimentum lacinia quis vel eros
-            donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi
-            porta.
+            Mitron is a free Short Video and Social Platform. It is designed for
+            people to showcase their innovative videos inline with our theme of
+            light humor. Mitron provides an easy and seamless interface for
+            users to create, edit and share their videos, and at the same time
+            browse through a library of top videos across the globe. Our mission
+            at Mitron is to create a platform where people can come and
+            entertain themself with small videos posted by people across the
+            globe and at the same time create a social incentive for people to
+            share and create their own videos.
           </p>
-          <a href="#" class="btn btn--green">Book now</a>
+          <a
+            class="btn btn--green"
+            href="https://play.google.com/store/apps/details?id=com.mitron.tv"
+            target="_blank"
+            >Download app on google play</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup1">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/mitron_app_2.png" alt="Tour photo" class="popup__img" />
+          <img
+            src="img/mitron_app_4.jpeg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            About Us
+          </h2>
+          <!-- <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3> -->
+          <p class="popup__text">
+            Mitron is a free Short Video and Social Platform. It is designed for
+            people to showcase their innovative videos inline with our theme of
+            light humor. Mitron provides an easy and seamless interface for
+            users to create, edit and share their videos, and at the same time
+            browse through a library of top videos across the globe. Our mission
+            at Mitron is to create a platform where people can come and
+            entertain themself with small videos posted by people across the
+            globe and at the same time create a social incentive for people to
+            share and create their own videos.
+          </p>
+          <a
+            class="btn btn--green"
+            href="https://play.google.com/store/apps/details?id=com.mitron.tv"
+            target="_blank"
+            >Download app on google play</a
+          >
         </div>
       </div>
     </div>
