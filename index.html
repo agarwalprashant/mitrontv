@@ -15,11 +15,18 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/jpeg" href="img/Mitron-app.jpg" />
 
-    <title>Mitron | Is Where Life happens</title>
+    <title>Mitron | Indian Short Video</title>
+    <script>
+      function playSound() {
+        console.log('inside playsound');
+        // document.getElementById('vid').play();
+        document.getElementById('vid').muted = false;
+      }
+    </script>
   </head>
 
   <body>
-    <div class="navigation">
+    <div class="navigation" onclick="playSound()">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
       <label for="navi-toggle" class="navigation__button">
@@ -54,8 +61,8 @@
     </div>
 
     <header class="header">
-      <div class="bg-video">
-        <video class="bg-video__content" autoplay="true" id="vid">
+      <div class="bg-video" onscroll="playSound()">
+        <video class="bg-video__content" autoplay="true" loop muted id="vid">
           <source src="img/riya-jain.mp4" type="video/mp4" />
           <source src="img/video.webm" type="video/webm" />
           Your browser is not supported!
@@ -528,10 +535,5 @@
             </div>
         </section>
         -->
-
-    <script>
-      console.log('autoplaying video');
-      document.getElementById('vid').play();
-    </script>
   </body>
 </html>
