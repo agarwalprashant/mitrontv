@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <meta
+      name="google-signin-client_id"
+      content="324440761540-t9cio37esqaa6curm535bgd6oo2k4gj1.apps.googleusercontent.com.apps.googleusercontent.com"
+    /> -->
 
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
@@ -23,6 +27,8 @@
         document.getElementById('vid').muted = false;
       }
     </script>
+
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
   </head>
 
   <body>
@@ -41,9 +47,7 @@
             <a href="#popup1" class="navigation__link">About Mitron</a>
           </li>
           <li class="navigation__item">
-            <a
-              href="https://mitronlegal.s3.ap-south-1.amazonaws.com/privacy.html"
-              class="navigation__link"
+            <a href="privacy.html" class="navigation__link" target="_blank"
               >Privacy Policy</a
             >
           </li>
@@ -62,7 +66,14 @@
 
     <header class="header">
       <div class="bg-video" onscroll="playSound()">
-        <video class="bg-video__content" autoplay="true" loop muted id="vid">
+        <video
+          class="bg-video__content"
+          autoplay="true"
+          controls
+          loop
+          muted
+          id="vid"
+        >
           <source src="img/riya-jain.mp4" type="video/mp4" />
           <source src="img/video.webm" type="video/webm" />
           Your browser is not supported!
@@ -82,9 +93,12 @@
         <h1 class="heading-primary">
           <span class="heading-primary--main">Mitron</span>
           <!-- <span class="heading-primary--sub">is where life happens</span> -->
-          <span class="heading-primary--sub">Indian Short Video </span>
+          <span
+            class="heading-primary--sub"
+            style="font-size: 1.5rem; letter-spacing: 1rem;"
+            >Redefining Digital Experience
+          </span>
         </h1>
-
         <a
           href="https://play.google.com/store/apps/details?id=com.mitron.tv"
           target="_blank"
@@ -95,6 +109,15 @@
             style="max-height: 100px; cursor: pointer;"
           />
         </a>
+        <h1 class="heading-primary">
+          <!-- <span class="heading-primary--main">Mitron</span> -->
+          <!-- <span class="heading-primary--sub">is where life happens</span> -->
+          <span
+            class="heading-primary--sub"
+            style="font-size: 1.5rem; letter-spacing: 1rem; margin-top: 4rem;"
+            >We are proud to be Indians
+          </span>
+        </h1>
       </div>
     </header>
 
@@ -338,17 +361,14 @@
       <div class="footer__logo-box">
         <picture class="footer__logo">
           <source
-            srcset="
-              img/logo-green-small-1x.png 1x,
-              img/logo-green-small-2x.png 2x
-            "
-            media="(max-width: 37.5em)"
+            srcset="img/Mitron-app.jpg-1x.png 1x, img/Mitron-app.jpg-2x.png 2x"
+            media="(max-width: 17.5em)"
           />
           <img
-            srcset="img/mitron-app.jpg 1x, img/mitron-app.jpg 2x"
+            srcset="img/Mitron-app.jpg 1x, img/Mitron-app.jpg 2x"
             height="250px"
             alt="Full logo"
-            src="img/mitron-app.jpg"
+            src="img/Mitron-app.jpg"
           />
         </picture>
       </div>
@@ -363,9 +383,7 @@
                 <a href="#" class="footer__link">Carrers</a>
               </li> -->
               <li class="footer__item">
-                <a
-                  href="https://mitronlegal.s3.ap-south-1.amazonaws.com/privacy.html"
-                  class="footer__link"
+                <a href="privacy.html" class="footer__link" target="_blank"
                   >Privacy policy</a
                 >
               </li>
